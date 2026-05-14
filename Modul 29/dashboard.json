@@ -1,0 +1,28 @@
+{
+  "dashboard_title": "Аналитика продаж - Домашнее задание",
+  "description": "Дашборд с KPI, трендом и детализацией. Фильтр по городу вылета.",
+  "css": "",
+  "json_metadata": "{\"native_filter_configuration\": [{\"id\": \"filter_origin_001\", \"type\": \"NATIVE_FILTER\", \"name\": \"Город вылета\", \"targets\": [{\"datasetId\": 1, \"column\": {\"name\": \"origin\"}}], \"filterType\": \"FILTER_SELECT\", \"scope\": {\"rootPath\": [\"DASHBOARD_ROOT\"], \"excluded\": [], \"included\": [\"CHART_101\", \"CHART_102\", \"CHART_103\"]}, \"controlValues\": {\"defaultValue\": [\"Moscow\"]}}]}",
+  "position_json": "{\"DASHBOARD_ROOT\": {\"children\": [\"DASHBOARD_HEADER\", \"GRID_1\"], \"type\": \"ROOT\", \"id\": \"DASHBOARD_ROOT\", \"meta\": {}}, \"DASHBOARD_HEADER\": {\"id\": \"DASHBOARD_HEADER\", \"type\": \"HEADER\", \"meta\": {}}, \"GRID_1\": {\"children\": [\"CHART_101\", \"CHART_102\", \"CHART_103\"], \"type\": \"GRID\", \"id\": \"GRID_1\", \"meta\": {\"background\": \"BACKGROUND_TRANSPARENT\"}}, \"CHART_101\": {\"children\": [], \"id\": \"CHART_101\", \"meta\": {\"chartId\": 101, \"width\": 12, \"height\": 30, \"x\": 0, \"y\": 0}, \"type\": \"CHART\"}, \"CHART_102\": {\"children\": [], \"id\": \"CHART_102\", \"meta\": {\"chartId\": 102, \"width\": 6, \"height\": 30, \"x\": 0, \"y\": 30}, \"type\": \"CHART\"}, \"CHART_103\": {\"children\": [], \"id\": \"CHART_103\", \"meta\": {\"chartId\": 103, \"width\": 6, \"height\": 30, \"x\": 6, \"y\": 30}, \"type\": \"CHART\"}}",
+  "slices": [
+    {
+      "id": 101,
+      "chart_name": "Тренд продаж по дням",
+      "viz_type": "line",
+      "datasource": "1__table"
+    },
+    {
+      "id": 102,
+      "chart_name": "Продажи по классу перелёта",
+      "viz_type": "bar",
+      "datasource": "1__table"
+    },
+    {
+      "id": 103,
+      "chart_name": "Общая выручка",
+      "viz_type": "big_number",
+      "datasource": "1__table"
+    }
+  ],
+  "id": 50
+}
